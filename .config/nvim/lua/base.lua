@@ -1,6 +1,6 @@
 vim.cmd("autocmd!")
 
-vim.opt.scriptencoding = 'utf-8'
+vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
 
@@ -17,7 +17,7 @@ vim.opt.scrolloff = 10
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.shell = 'fish'
-vim.opt.noswapfile = true
+vim.opt.swapfile = false
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true
 vim.opt.smarttab = true
