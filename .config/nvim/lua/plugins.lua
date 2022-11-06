@@ -43,9 +43,9 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
 
   use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
+    'svrana/neosolarized.nvim'
   }
+  use 'tjdevries/colorbuddy.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
 
