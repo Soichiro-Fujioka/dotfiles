@@ -1,0 +1,11 @@
+# fisher
+.config/fish/completions
+.config/fish/functions/fisher.fish
+.config/fish/fish_variables
+
+# z
+.config/fish/functions/__z*
+.config/fish/conf.d
+
+# local
+config-local.fish
