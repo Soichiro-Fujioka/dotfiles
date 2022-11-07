@@ -11,10 +11,10 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'kdheepak/tabline.nvim'
-  use 'akinsho/nvim-bufferline.lua'
   use 'simeji/winresizer'
 
-  use 'dinhhuy258/git.nvim'
+  use 'tpope/vim-fugitive'
+  -- use 'dinhhuy258/git.nvim'
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
@@ -48,5 +48,7 @@ packer.startup(function(use)
   use 'tjdevries/colorbuddy.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'tpope/vim-commentary'
 
 end)
