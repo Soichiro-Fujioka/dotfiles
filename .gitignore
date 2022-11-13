@@ -19,6 +19,9 @@
 # packer
 .config/nvim/plugin/packer_compiled.lua
 
+# iterms
+.config/iTerm2
+
 # local
 config-local.fish
 base-local.lua
