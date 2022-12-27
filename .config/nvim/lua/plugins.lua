@@ -50,5 +50,6 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'tpope/vim-commentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
 end)

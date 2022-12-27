@@ -23,6 +23,10 @@ ts.setup {
   autotag = {
     enable = true,
   },
+  -- for tsx comment
+  context_commentstring = {
+    enable = true
+  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
