@@ -3,6 +3,9 @@
 .config/fish/functions/fisher.fish
 .config/fish/fish_variables
 
+# configstore
+.config/configstore
+
 # z
 .config/fish/functions/__z*
 .config/fish/conf.d/z*
