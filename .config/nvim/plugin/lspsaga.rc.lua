@@ -3,7 +3,7 @@ if (not status) then return end
 
 saga.init_lsp_saga {
   symbol_in_winbar = {
-    enable = true
+    enable = false
   },
   code_action_lightbulb = {
     enable = false
