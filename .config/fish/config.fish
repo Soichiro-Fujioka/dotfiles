@@ -31,6 +31,8 @@ alias gpl='git pull origin'
 alias glo='git log --oneline'
 alias gfc='git fetch --all'
 
+alias lg='lazygit'
+
 set -gx EDITOR nvim
 
 set -gx PATH bin $PATH
