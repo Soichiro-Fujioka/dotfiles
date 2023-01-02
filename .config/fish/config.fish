@@ -39,6 +39,9 @@ set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 
+# delta
+set -gx XDG_CONFIG_HOME "$HOME/.config"
+
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
 set -x PATH $HOME/.nodebrew/current/bin $PATH
