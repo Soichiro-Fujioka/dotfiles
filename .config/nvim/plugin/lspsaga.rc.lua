@@ -1,18 +1,20 @@
 local status, saga = pcall(require, "lspsaga")
 if (not status) then return end
 
-saga.init_lsp_saga {
+saga.setup({
+  ui = {
+    colors = {
+      normal_bg = "NONE",
+      title_bg = "NONE"
+    }
+  },
   symbol_in_winbar = {
     enable = false
   },
-  code_action_lightbulb = {
+  lightbulb = {
     enable = false
   },
-  server_filetype_map = {
-    typescript = 'typescript',
-    python = 'python'
-  }
-}
+})
 
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
