@@ -7,7 +7,7 @@ vim.opt.fileencoding = 'utf-8'
 vim.opt.title = true
 vim.opt.mouse = 'a'
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.backup = false
@@ -29,6 +29,7 @@ vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.formatoptions:append { 'r' }
+vim.opt.signcolumn = "yes"
 
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = '*',
