@@ -36,6 +36,7 @@ telescope.setup {
 }
 
 telescope.load_extension("file_browser")
+telescope.load_extension("memo")
 
 vim.keymap.set('n', ';f',
   function()

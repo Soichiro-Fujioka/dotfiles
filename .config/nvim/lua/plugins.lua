@@ -39,7 +39,12 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
-  use 'nvim-telescope/telescope.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      'delphinus/telescope-memo.nvim',
+    },
+  }
   use 'nvim-telescope/telescope-file-browser.nvim'
 
   use 'windwp/nvim-autopairs'
@@ -57,5 +62,6 @@ packer.startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   use 'dhruvasagar/vim-marp'
+  use 'glidenote/memolist.vim'
 
 end)

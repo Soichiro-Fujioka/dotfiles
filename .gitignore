@@ -19,9 +19,13 @@
 
 # packer
 .config/nvim/plugin/packer_compiled.lua
+.config/packer
 
 # iterms
 .config/iTerm2
+
+# memo
+.config/memo
 
 # local
 config-local.fish
