@@ -16,6 +16,7 @@ alias ll "ls -l"
 alias lla "ll -A"
 alias vim "nvim"
 alias pip "pip3"
+alias cl "clear"
 
 # Git
 alias g='git'
