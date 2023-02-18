@@ -64,4 +64,6 @@ packer.startup(function(use)
   use 'dhruvasagar/vim-marp'
   use 'glidenote/memolist.vim'
 
+  use 'kdheepak/lazygit.nvim'
+
 end)
