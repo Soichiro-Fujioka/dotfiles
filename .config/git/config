@@ -1,2 +1,12 @@
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+
 [delta]
-    side-by-side = true
+  side-by-side = true
+  navigate = true
+
+[interactive]
+  diffFilter = delta --color-only
