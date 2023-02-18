@@ -31,6 +31,7 @@ telescope.setup {
           ["c"] = fb_actions.copy,
         },
       },
+      git_status = false,
     },
   },
 }
