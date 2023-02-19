@@ -13,8 +13,6 @@ packer.startup(function(use)
   use 'kdheepak/tabline.nvim'
   use 'simeji/winresizer'
 
-  use 'tpope/vim-fugitive'
-  -- use 'dinhhuy258/git.nvim'
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
