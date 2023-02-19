@@ -59,7 +59,6 @@ packer.startup(function(use)
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-  use 'dhruvasagar/vim-marp'
   use 'glidenote/memolist.vim'
 
   use 'kdheepak/lazygit.nvim'
