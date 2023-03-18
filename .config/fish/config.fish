@@ -21,6 +21,7 @@ alias cl "clear"
 # Git
 alias g='git'
 alias gb='git branch'
+alias gd='git diff'
 alias gch='git checkout'
 alias gco='git commit'
 alias gcoa='git commit --amend'
