@@ -14,6 +14,9 @@ saga.setup({
   lightbulb = {
     enable = false
   },
+  diagnostic = {
+    on_insert_follow = true,
+  }
 })
 
 local opts = { noremap = true, silent = true }
