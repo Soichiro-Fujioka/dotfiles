@@ -3,6 +3,9 @@ This dotfiles is based on [craftzdog/dotfiles-public](https://github.com/craftzd
 
 Thank you for sharing the great dotfiles!!🌈
 
+## Screen Shot
+![](./img/screen_shot.png)
+
 ## Applications
 - [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell) - the friendly interactive shell
 - [jorgebucaran/fisher](https://github.com/jorgebucaran/fisher) - A plugin manager for Fish
