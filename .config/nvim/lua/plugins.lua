@@ -44,6 +44,7 @@ packer.startup(function(use)
     },
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'nvim-tree/nvim-tree.lua'
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'

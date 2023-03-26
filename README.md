@@ -35,7 +35,8 @@ Thank you for sharing the great dotfiles!!🌈
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - snippet Engine for Neovim written in Lua
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - configurations and abstraction layer for Neovim
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - a highly extendable fuzzy finder over lists
-- [nvim-telescope/telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim) - a file browser extension for telescope.nvim 
+- [nvim-telescope/telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)(not used) - a file browser extension for telescope.nvim
+- [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - A File Explorer For Neovim Written In Lua
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) - a super powerful autopair plugin for Neovim that supports multiple characters
 - [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - use treesitter to autoclose and autorename html tag
 - [svrana/neosolarized.nvim](https://github.com/svrana/neosolarized.nvim) - a truecolor, solarized dark colorscheme using tjdevries/colorbuddy.vim for neovim
