@@ -17,13 +17,16 @@ require("nvim-tree").setup({
     dotfiles = false,
   },
   view = {
-  width = 35,
-  mappings = {
-    list = {
-      { key = "n", action = "create" },
+    width = 35,
+    mappings = {
+      list = {
+        { key = "n", action = "create" },
+      },
     },
   },
-}
+  git = {
+    ignore = false
+  }
 })
 
 -- open nvim tree
