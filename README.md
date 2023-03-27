@@ -34,6 +34,7 @@ Thank you for sharing the great dotfiles!!🌈
 - [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - a Neovim plugin that allows you to easily manage external editor tooling such as LSP servers, DAP servers, linters, and formatters through a single interface
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - bridges mason.nvim with the lspconfig plugin - making it easier to use both plugins together 
+- [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) - an EditorConfig plugin for Vim
 - [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) - a lightweight LSP plugin based on Neovim's built-in LSP with a highly performant UI
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - snippet Engine for Neovim written in Lua
 - [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - configurations and abstraction layer for Neovim
