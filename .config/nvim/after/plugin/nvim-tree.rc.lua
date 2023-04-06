@@ -26,6 +26,9 @@ require("nvim-tree").setup({
   },
   git = {
     ignore = false
+  },
+  update_focused_file = {
+    enable = true
   }
 })
 
