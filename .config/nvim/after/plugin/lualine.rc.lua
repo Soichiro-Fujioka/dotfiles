@@ -27,6 +27,9 @@ lualine.setup {
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },
+  options = {
+    theme = 'neon'
+  }
 }
 
 local keymap = vim.keymap

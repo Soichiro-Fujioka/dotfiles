@@ -53,6 +53,7 @@ packer.startup(function(use)
   use {
     'svrana/neosolarized.nvim'
   }
+  use "rafamadriz/neon"
   use 'bluz71/vim-nightfly-colors'
   use 'tjdevries/colorbuddy.nvim'
   use 'kyazdani42/nvim-web-devicons'
