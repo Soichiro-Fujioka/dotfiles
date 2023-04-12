@@ -28,7 +28,8 @@ lualine.setup {
     lualine_z = {'location'}
   },
   options = {
-    theme = 'neon'
+    -- theme = 'neon'
+    theme = 'tokyonight'
   }
 }
 
