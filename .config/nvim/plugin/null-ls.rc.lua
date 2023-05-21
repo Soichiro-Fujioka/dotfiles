@@ -41,3 +41,5 @@ vim.api.nvim_create_user_command(
   end,
   { nargs = 0 }
 )
+
+vim.keymap.set('n', 'gf', function() vim.lsp.buf.format { async = true } end)
