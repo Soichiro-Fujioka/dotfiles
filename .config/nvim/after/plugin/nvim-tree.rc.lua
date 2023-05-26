@@ -6,7 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- open nvim tree
-vim.keymap.set('n', 'sf', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', 'sf', ':NvimTreeToggle<CR>', { silent = true })
 vim.cmd[[hi NvimTreeNormal guibg=NONE ctermbg=NONE]] -- background transparent
 
 local function on_attach(bufnr)
