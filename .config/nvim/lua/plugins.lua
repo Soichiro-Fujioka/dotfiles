@@ -66,5 +66,6 @@ packer.startup(function(use)
   use 'glidenote/memolist.vim'
 
   use 'kdheepak/lazygit.nvim'
-
+  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+  use "sindrets/diffview.nvim"
 end)
