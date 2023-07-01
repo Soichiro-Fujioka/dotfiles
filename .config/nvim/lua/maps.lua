@@ -6,6 +6,15 @@ keymap.set('n', 'x', '"_x')
 keymap.set('n', 'd', '"_d')
 keymap.set('n', 'D', '"_D')
 
+keymap.set('v', 'x', '"_x')
+keymap.set('v', 'd', '"_d')
+keymap.set('v', 'D', '"_D')
+
+keymap.set('v', 'x', '"_x')
+keymap.set('x', 'd', '"_d')
+keymap.set('x', 'p', '"_dP')
+
+
 keymap.set('i', 'jj', '<ESC>')
 
 keymap.set('n', 'te', ':tabedit')
