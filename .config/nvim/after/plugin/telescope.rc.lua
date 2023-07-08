@@ -17,6 +17,11 @@ telescope.setup {
       },
     },
   },
+  extensions = {
+    media_files = {
+      find_cmd = "rg"
+    }
+  },
   -- extensions = {
   --   file_browser = {
   --     theme = "dropdown",
@@ -38,6 +43,7 @@ telescope.setup {
 
 -- telescope.load_extension("file_browser")
 telescope.load_extension("memo")
+telescope.load_extension("media_files")
 
 vim.keymap.set('n', ';f',
   function()
@@ -50,6 +56,8 @@ vim.keymap.set('n', ';f',
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
 end)
+
+vim.keymap.set('n', ';m', ':Telescope media_files<CR>')
 
 -- use nvim-tree plugin for file browser
 -- vim.keymap.set("n", "sf", function()

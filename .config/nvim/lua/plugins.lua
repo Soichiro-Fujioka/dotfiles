@@ -45,6 +45,8 @@ packer.startup(function(use)
     },
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'nvim-telescope/telescope-media-files.nvim'
+
   use 'nvim-tree/nvim-tree.lua'
 
   use 'windwp/nvim-autopairs'
@@ -68,4 +70,5 @@ packer.startup(function(use)
   use 'kdheepak/lazygit.nvim'
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use "sindrets/diffview.nvim"
+
 end)

@@ -1,16 +1,19 @@
 # Dotfiles
+
 This dotfiles is based on [craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public).
 
 Thank you for sharing the great dotfiles!!🌈
 
 ## Screen Shot
+
 ![](./img/screen_shot.png)
 
 ## Applications
+
 - [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell) - the friendly interactive shell
 - [jorgebucaran/fisher](https://github.com/jorgebucaran/fisher) - A plugin manager for Fish
   - [jethrokuan/z](https://github.com/jethrokuan/z) - a port of [z](https://github.com/rupa/z) for the fish shel
-- [neovim/neovim](https://github.com/neovim/neovim) - a project that seeks to aggressively refactor Vim 
+- [neovim/neovim](https://github.com/neovim/neovim) - a project that seeks to aggressively refactor Vim
 - [tmux/tmux](https://github.com/tmux/tmux) - a terminal multiplexer
 - [x-motemen/ghq](https://github.com/x-motemen/ghq) - manage remote repository clones
 - [dandavison/git-delta](https://github.com/dandavison/delta) - a git diff tools
@@ -20,6 +23,7 @@ Thank you for sharing the great dotfiles!!🌈
 - [mattn/memo](https://github.com/mattn/memo) - memo life for you
 
 ## Neovim plugins
+
 - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) - plugin/package management for Neovim
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - a blazing fast and easy to configure Neovim statusline written in Lua
 - [kdheepak/tabline.nvim](https://github.com/kdheepak/tabline.nvim) - a "buffer and tab" tabline
@@ -30,10 +34,10 @@ Thank you for sharing the great dotfiles!!🌈
 - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer) - nvim-cmp source for buffer words
 - [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - nvim-cmp source for neovim's built-in language server client
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - a completion engine plugin for neovim written in Lua
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - configs for the Nvim LSP client 
+- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - configs for the Nvim LSP client
 - [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - a Neovim plugin that allows you to easily manage external editor tooling such as LSP servers, DAP servers, linters, and formatters through a single interface
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - bridges mason.nvim with the lspconfig plugin - making it easier to use both plugins together 
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - bridges mason.nvim with the lspconfig plugin - making it easier to use both plugins together
 - [editorconfig/editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) - an EditorConfig plugin for Vim
 - [glepnir/lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) - a lightweight LSP plugin based on Neovim's built-in LSP with a highly performant UI
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - snippet Engine for Neovim written in Lua
@@ -56,6 +60,7 @@ Thank you for sharing the great dotfiles!!🌈
 - [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) - plugin for calling lazygit from within neovim
 
 ## How to setup
+
 1. Create `.config` and `.tmux.conf` alias at user directory
 2. Install below [Setup](#Setup) list applications
 3. Open `neovim` and execute `:PackerUpdate` command
