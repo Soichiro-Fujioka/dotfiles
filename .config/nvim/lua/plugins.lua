@@ -70,5 +70,7 @@ packer.startup(function(use)
   use 'kdheepak/lazygit.nvim'
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use "sindrets/diffview.nvim"
+  use 'edluffy/hologram.nvim'
+  use 'adelarsq/image_preview.nvim'
 
 end)
