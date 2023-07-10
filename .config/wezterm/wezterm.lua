@@ -9,6 +9,7 @@ config = {
   disable_default_key_bindings = true,
   use_fancy_tab_bar = false,
   tab_and_split_indices_are_zero_based = true,
+  window_decorations = "NONE",
   color_scheme = 'iceberg-dark',
   tab_bar_at_bottom = true,
   leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 }, 
@@ -105,6 +106,8 @@ config = {
         end),
       },
     },
+    { key = 'n', mods = 'LEADER', action = wezterm.action.SpawnTab 'DefaultDomain' },
+    { key = 'w', mods = 'LEADER', action = wezterm.action.CloseCurrentTab { confirm = true } }
   }
 }
 
