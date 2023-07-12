@@ -2,6 +2,7 @@
 .config/fish/completions
 .config/fish/functions/fisher.fish
 .config/fish/fish_variables
+.config/fisher
 
 # configstore
 .config/configstore
@@ -12,6 +13,10 @@
 # z
 .config/fish/functions/__z*
 .config/fish/conf.d/z*
+
+# sdk
+.config/fish/functions/sdk.fish
+.config/fish/conf.d/sdk.fish
 
 # prompt
 .config/fish/functions/fish_mode_prompt.fish
