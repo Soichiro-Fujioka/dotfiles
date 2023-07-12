@@ -2,14 +2,14 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 config = {
-  font = wezterm.font("JetBrainsMono Nerd Font", {weight="Regular", stretch="Normal", style="Normal"}),
+  font = wezterm.font("UDEV Gothic 35NF", {weight="Regular", stretch="Normal", style="Normal"}),
   font_size = 13,
   enable_tab_bar = true,
   window_background_opacity = 0.75,
   disable_default_key_bindings = true,
   use_fancy_tab_bar = false,
   tab_and_split_indices_are_zero_based = true,
-  window_decorations = "NONE",
+  window_decorations = "RESIZE",
   color_scheme = 'iceberg-dark',
   tab_bar_at_bottom = true,
   leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 }, 

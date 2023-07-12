@@ -32,6 +32,8 @@ packer.startup(function(use)
   use({
     "glepnir/lspsaga.nvim",
     branch = "main",
+    -- finder not work on latest version
+    commit = "4f07"
   })
   use 'L3MON4D3/LuaSnip'
   use {
@@ -70,7 +72,5 @@ packer.startup(function(use)
   use 'kdheepak/lazygit.nvim'
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use "sindrets/diffview.nvim"
-  use 'edluffy/hologram.nvim'
-  use 'adelarsq/image_preview.nvim'
 
 end)
