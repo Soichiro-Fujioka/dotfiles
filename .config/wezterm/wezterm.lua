@@ -30,6 +30,7 @@ config = {
       mods = 'LEADER',
       action = wezterm.action.CloseCurrentPane { confirm = true },
     },
+    -- pain move
     {
         key = 'h',
         mods = 'LEADER',
@@ -68,6 +69,7 @@ config = {
       mods = 'LEADER',
       action = wezterm.action.ActivateTabRelative(1),
     },
+    -- move tab
     -- TODO use for
     {
       key = '0',
@@ -94,6 +96,7 @@ config = {
       mods = 'LEADER',
       action = wezterm.action.ActivateTab(4),
     },
+    -- change tab name
     {
       key = ',',
       mods = 'LEADER',
@@ -107,7 +110,11 @@ config = {
       },
     },
     { key = 'n', mods = 'LEADER', action = wezterm.action.SpawnTab 'DefaultDomain' },
-    { key = 'w', mods = 'LEADER', action = wezterm.action.CloseCurrentTab { confirm = true } }
+    { key = 'w', mods = 'LEADER', action = wezterm.action.CloseCurrentTab { confirm = true } },
+    -- copy mode
+    { key = 'c', mods = 'LEADER', action = wezterm.action.ActivateCopyMode },
+    -- quick select
+    { key = 's', mods = 'LEADER', action = wezterm.action.QuickSelect },
   }
 }
 
