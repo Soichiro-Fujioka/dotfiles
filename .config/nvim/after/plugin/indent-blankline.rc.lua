@@ -1,22 +1,24 @@
-vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#61AFEF gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#56B6C2 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent4 guifg=#E5C07B gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent5 guifg=#C678DD gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent6 guifg=#E06C75 gui=nocombine]]
-
-vim.opt.list = true
-vim.opt.listchars:append "eol:↴"
-
-require("indent_blankline").setup {
-    space_char_blankline = " ",
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent4",
-        "IndentBlanklineIndent5",
-        "IndentBlanklineIndent6",
-    },
+local highlight = {
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
 }
+
+local hooks = require "ibl.hooks"
+-- create the highlight groups in the highlight setup hook, so they are reset
+-- every time the colorscheme changes
+hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
+    vim.api.nvim_set_hl(0, "0", { fg = "#71C4C2" })
+    vim.api.nvim_set_hl(0, "1", { fg = "#E8D8D2" })
+    vim.api.nvim_set_hl(0, "2", { fg = "#71C4C2" })
+    vim.api.nvim_set_hl(0, "3", { fg = "#F7F7F7" })
+    vim.api.nvim_set_hl(0, "4", { fg = "#E3BCB5" })
+    vim.api.nvim_set_hl(0, "5", { fg = "#4a708b" })
+    vim.api.nvim_set_hl(0, "6", { fg = "#ffe9cf" })
+end)
+
+require("ibl").setup { scope = { highlight = highlight }, char = "│" }
