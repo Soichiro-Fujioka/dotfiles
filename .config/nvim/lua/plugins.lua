@@ -33,7 +33,7 @@ packer.startup(function(use)
     "glepnir/lspsaga.nvim",
     branch = "main",
     -- finder not work on latest version
-    commit = "4f07"
+    -- commit = "4f07"
   })
   use 'L3MON4D3/LuaSnip'
   use {
