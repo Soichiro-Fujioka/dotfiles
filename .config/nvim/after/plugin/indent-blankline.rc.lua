@@ -21,4 +21,4 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
     vim.api.nvim_set_hl(0, "6", { fg = "#ffe9cf" })
 end)
 
-require("ibl").setup { scope = { highlight = highlight }, char = "│" }
+require("ibl").setup { scope = { highlight = highlight }}
