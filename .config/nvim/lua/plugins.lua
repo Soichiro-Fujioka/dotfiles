@@ -77,4 +77,24 @@ packer.startup(function(use)
   use 'folke/noice.nvim'
   use 'MunifTanjim/nui.nvim'
 
+  use {
+    'zbirenbaum/copilot.lua',
+    -- not work on other rc file
+    config = function()
+      require('copilot').setup {
+        suggestion = { enabled = false },
+        panel = { enabled = false },
+
+        copilot_node_command = 'node',
+      }
+    end,
+  }
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup()
+    end
+  }
+
 end)

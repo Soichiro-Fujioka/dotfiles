@@ -35,3 +35,6 @@
 # local
 config-local.fish
 base-local.lua
+
+# copilot
+github-copilot
