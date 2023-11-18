@@ -37,3 +37,5 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 vim.opt.clipboard:append { 'unnamedplus' }
+
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
