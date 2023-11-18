@@ -46,7 +46,7 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
-set -x PATH $HOME/.nodebrew/current/bin $PATH
+set -x PATH /opt/homebrew/bin/nodebrew/current/bin $PATH
 set -x NODEBREW_ROOT /opt/homebrew/bin/nodebrew
 
 # Go
