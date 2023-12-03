@@ -19,8 +19,8 @@
 .config/fish/conf.d/sdk.fish
 
 # prompt
-.config/fish/functions/fish_mode_prompt.fish
-.config/fish/functions/fish_prompt.fish
+# .config/fish/functions/fish_mode_prompt.fish
+# .config/fish/functions/fish_prompt.fish
 
 # packer
 .config/nvim/plugin/packer_compiled.lua
