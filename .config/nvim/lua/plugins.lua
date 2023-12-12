@@ -48,6 +48,7 @@ packer.startup(function(use)
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'nvim-telescope/telescope-media-files.nvim'
+  use 'folke/trouble.nvim'
 
   use 'nvim-tree/nvim-tree.lua'
 

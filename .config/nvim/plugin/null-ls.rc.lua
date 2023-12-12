@@ -19,6 +19,7 @@ null_ls.setup {
     null_ls.builtins.diagnostics.eslint_d,
     null_ls.builtins.diagnostics.flake8,
     null_ls.builtins.formatting.black,
+    null_ls.builtins.diagnostics.tsc
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
