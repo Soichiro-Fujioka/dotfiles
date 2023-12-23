@@ -29,7 +29,8 @@ lualine.setup {
   },
   options = {
     -- theme = 'neon'
-    theme = 'tokyonight'
+    -- theme = 'tokyonight'
+    theme = 'nordic'
   }
 }
 
