@@ -1,7 +1,7 @@
 local trouble = require("trouble")
 
 trouble.setup {
-  position = "right"
+  position = "bottom"
 }
 
 vim.keymap.set("n", ";e", function() require("trouble").toggle("workspace_diagnostics") end)
