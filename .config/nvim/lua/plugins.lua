@@ -10,7 +10,7 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use 'kdheepak/tabline.nvim'
+  use 'romgrk/barbar.nvim'
   use 'simeji/winresizer'
 
   use({
