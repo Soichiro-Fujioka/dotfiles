@@ -5,7 +5,7 @@ config = {
   font = wezterm.font("UDEV Gothic 35NF", {weight="Regular", stretch="Normal", style="Normal"}),
   font_size = 13,
   enable_tab_bar = true,
-  -- window_background_opacity = 0.95,
+  window_background_opacity = 0.75,
   -- macos_window_background_blur = 10,
   disable_default_key_bindings = true,
   use_fancy_tab_bar = false,
