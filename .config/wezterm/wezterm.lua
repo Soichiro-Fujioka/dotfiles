@@ -119,5 +119,13 @@ config = {
   }
 }
 
+wezterm.on('update-right-status', function(window, pane)
+  local date = wezterm.strftime '%Y-%m-%d %H:%M:%S'
+
+  window:set_right_status(wezterm.format {
+    { Text = '' .. date},
+  })
+end)
+
 
 return config
