@@ -42,12 +42,7 @@ packer.startup(function(use)
   }
   use {
     'nvim-telescope/telescope.nvim',
-    requires = {
-      'delphinus/telescope-memo.nvim',
-    },
   }
-  use 'nvim-telescope/telescope-file-browser.nvim'
-  use 'nvim-telescope/telescope-media-files.nvim'
   use 'folke/trouble.nvim'
 
   use 'nvim-tree/nvim-tree.lua'
@@ -69,31 +64,8 @@ packer.startup(function(use)
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-  use 'glidenote/memolist.vim'
-
-
   use 'rcarriga/nvim-notify'
   use 'folke/noice.nvim'
   use 'MunifTanjim/nui.nvim'
-
-  -- use {
-  --   'zbirenbaum/copilot.lua',
-  --   -- not work on other rc file
-  --   config = function()
-  --     require('copilot').setup {
-  --       suggestion = { enabled = false },
-  --       panel = { enabled = false },
-
-  --       copilot_node_command = 'node',
-  --     }
-  --   end,
-  -- }
-  -- use {
-  --   "zbirenbaum/copilot-cmp",
-  --   after = { "copilot.lua" },
-  --   config = function ()
-  --     require("copilot_cmp").setup()
-  --   end
-  -- }
 
 end)
