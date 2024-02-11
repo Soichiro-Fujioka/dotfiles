@@ -52,6 +52,10 @@ config = {
       mods = 'LEADER',
       action = wezterm.action.ActivatePaneDirection 'Down',
     },
+    { key = "h", mods = "CMD", action = wezterm.action.AdjustPaneSize { 'Left', 5 } },
+    { key = "l", mods = "CMD", action = wezterm.action.AdjustPaneSize { 'Right', 5 } },
+    { key = "k", mods = "CMD", action = wezterm.action.AdjustPaneSize { 'Up', 5 } },
+    { key = "j", mods = "CMD", action = wezterm.action.AdjustPaneSize { 'Down', 5 } },
     -- clipboard
     { key = "c", mods = "CMD", action = wezterm.action({ CopyTo = "Clipboard" }) },
 		{ key = "v", mods = "CMD", action = wezterm.action({ PasteFrom = "Clipboard" }) },
@@ -96,6 +100,31 @@ config = {
       key = '4',
       mods = 'LEADER',
       action = wezterm.action.ActivateTab(4),
+    },
+    {
+      key = '5',
+      mods = 'LEADER',
+      action = wezterm.action.ActivateTab(5),
+    },
+    {
+      key = '6',
+      mods = 'LEADER',
+      action = wezterm.action.ActivateTab(6),
+    },
+    {
+      key = '7',
+      mods = 'LEADER',
+      action = wezterm.action.ActivateTab(7),
+    },
+    {
+      key = '8',
+      mods = 'LEADER',
+      action = wezterm.action.ActivateTab(8),
+    },
+    {
+      key = '9',
+      mods = 'LEADER',
+      action = wezterm.action.ActivateTab(9),
     },
     -- change tab name
     {
