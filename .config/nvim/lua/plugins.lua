@@ -18,6 +18,9 @@ packer.startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
 
+  use 'sotte/presenting.vim'
+  use 'folke/zen-mode.nvim'
+
   use 'nvim-lua/plenary.nvim'
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/cmp-buffer'
