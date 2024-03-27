@@ -3,6 +3,7 @@
 .config/fish/functions/fisher.fish
 .config/fish/fish_variables
 .config/fisher
+.config/fish/functions/__*
 
 # configstore
 .config/configstore
@@ -11,7 +12,6 @@
 .config/lazygit/state.yml
 
 # z
-.config/fish/functions/__z*
 .config/fish/conf.d/z*
 
 # sdk
@@ -38,3 +38,8 @@ base-local.lua
 
 # copilot
 github-copilot
+
+.DS_Store
+
+# rest-client(vs-code)
+rest-client
