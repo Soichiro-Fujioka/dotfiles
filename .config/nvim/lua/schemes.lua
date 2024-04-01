@@ -10,4 +10,4 @@ vim.cmd 'autocmd ColorScheme * highlight NvimTreeNormal ctermbg=none guibg=none'
 vim.cmd 'autocmd ColorScheme * highlight NvimTreeNormalNC ctermbg=none guibg=none'
 
 
-vim.cmd [[colorscheme nordic]]
+vim.cmd [[colorscheme tokyonight]]
