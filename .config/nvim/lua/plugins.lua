@@ -72,4 +72,6 @@ packer.startup(function(use)
   use 'folke/noice.nvim'
   use 'MunifTanjim/nui.nvim'
 
+  use 'kdheepak/lazygit.nvim'
+
 end)
