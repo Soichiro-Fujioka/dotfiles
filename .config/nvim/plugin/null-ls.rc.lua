@@ -13,13 +13,13 @@ local lsp_formatting = function(bufnr)
 end
 
 null_ls.setup {
+  diagnostics_format = "#{m} (#{s}: #{c})",
   sources = {
     null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.code_actions.eslint_d,
-    null_ls.builtins.diagnostics.eslint_d,
-    null_ls.builtins.diagnostics.flake8,
     null_ls.builtins.formatting.black,
-    null_ls.builtins.diagnostics.tsc
+    require("none-ls.diagnostics.flake8"),
+    require("none-ls.diagnostics.eslint_d"),
+    require("none-ls.code_actions.eslint_d"),
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

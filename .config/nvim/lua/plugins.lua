@@ -29,6 +29,8 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig'
   -- use 'jose-elias-alvarez/null-ls.nvim'
   use 'nvimtools/none-ls.nvim'
+  use 'nvimtools/none-ls-extras.nvim'
+
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'editorconfig/editorconfig-vim'
