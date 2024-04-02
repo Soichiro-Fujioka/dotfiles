@@ -35,4 +35,5 @@ vim.keymap.set('n', ';f',
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
 end)
+vim.keymap.set('n', ';n', ":Telescope notify<CR>", { silent = true})
 
