@@ -16,9 +16,9 @@ keymap.set('x', 'p', '"_dP')
 
 keymap.set('i', 'jj', '<ESC>')
 
-keymap.set('n', 'te', ':tabedit')
-keymap.set('n', 'ss', ':split<Return><C-w>w')
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+keymap.set('n', 'te', ':tabedit', { silent = true })
+keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
+keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
 
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('', 'sh', '<C-w>h')
