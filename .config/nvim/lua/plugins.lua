@@ -25,6 +25,8 @@ packer.startup(function(use)
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-path'
+  use 'f3fora/cmp-spell'
   use 'hrsh7th/nvim-cmp'
   use 'neovim/nvim-lspconfig'
   -- use 'jose-elias-alvarez/null-ls.nvim'
@@ -48,6 +50,10 @@ packer.startup(function(use)
   }
   use {
     'nvim-telescope/telescope.nvim',
+  }
+  use {
+    'prochri/telescope-all-recent.nvim',
+    requires = {{'kkharji/sqlite.lua'}, {'stevearc/dressing.nvim'}}
   }
   use 'folke/trouble.nvim'
 
