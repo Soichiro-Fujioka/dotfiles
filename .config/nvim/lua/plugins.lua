@@ -66,7 +66,7 @@ packer.startup(function(use)
   use 'tjdevries/colorbuddy.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
-  use 'lukas-reineke/indent-blankline.nvim'
+  use 'shellRaining/hlchunk.nvim'
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
