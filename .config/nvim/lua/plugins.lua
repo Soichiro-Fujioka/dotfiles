@@ -77,5 +77,6 @@ packer.startup(function(use)
   use 'kdheepak/lazygit.nvim'
 
   use 'lewis6991/gitsigns.nvim'
+  use 'kazhala/close-buffers.nvim'
 
 end)
