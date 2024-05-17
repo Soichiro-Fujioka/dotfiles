@@ -67,8 +67,8 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'norcalli/nvim-colorizer.lua'
   use 'shellRaining/hlchunk.nvim'
-  use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'numToStr/Comment.nvim'
 
   use 'rcarriga/nvim-notify'
   use 'folke/noice.nvim'
