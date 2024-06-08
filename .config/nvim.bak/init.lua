@@ -1,6 +1,0 @@
-require('base')
-require('maps')
-require('highlights')
-require('plugins')
-require('schemes')
-require('base-local')
