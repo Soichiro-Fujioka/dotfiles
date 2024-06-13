@@ -123,4 +123,22 @@ return {
   {
     "simeji/winresizer",
   },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        section_separators = { left = "", right = "" },
+      },
+      sections = {
+        lualine_a = {
+          { "mode", separator = { left = "" }, right_padding = 2 },
+        },
+        lualine_z = {
+          function()
+            return " " .. os.date("%T")
+          end,
+        },
+      },
+    },
+  },
 }
