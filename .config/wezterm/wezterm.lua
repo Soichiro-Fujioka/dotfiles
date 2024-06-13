@@ -12,7 +12,8 @@ config = {
 	tab_and_split_indices_are_zero_based = true,
 	window_decorations = "RESIZE",
 	-- color_scheme = "Tokyo Night Moon",
-	color_scheme = "Solarized Dark - Patched",
+	-- color_scheme = "Solarized Dark - Patched",
+	color_scheme = "Catppuccin Mocha",
 	tab_bar_at_bottom = true,
 	leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 },
 	keys = {
@@ -70,6 +71,7 @@ config = {
 			mods = "LEADER",
 			action = wezterm.action.TogglePaneZoomState,
 		},
+		{ key = "t", mods = "LEADER", action = wezterm.action.EmitEvent("toggle-tabbar") },
 		{
 			key = "Tab",
 			mods = "LEADER",
@@ -155,6 +157,18 @@ wezterm.on("update-right-status", function(window, pane)
 	window:set_right_status(wezterm.format({
 		{ Text = "" .. date },
 	}))
+end)
+
+wezterm.on("toggle-tabbar", function(window, _)
+	local overrides = window:get_config_overrides() or {}
+	if overrides.enable_tab_bar == false then
+		wezterm.log_info("tab bar shown")
+		overrides.enable_tab_bar = true
+	else
+		wezterm.log_info("tab bar hidden")
+		overrides.enable_tab_bar = false
+	end
+	window:set_config_overrides(overrides)
 end)
 
 return config
