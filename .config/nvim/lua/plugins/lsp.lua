@@ -26,7 +26,7 @@ return {
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
       -- change a keymap
       keys[#keys + 1] = { "K", "<cmd>Lspsaga hover_doc<Return>" }
-      keys[#keys + 1] = { "gd", "<cmd>Lspsaga finder def+ref<Return>" }
+      keys[#keys + 1] = { "gf", "<cmd>Lspsaga finder def+ref<Return>" }
       keys[#keys + 1] = { "ge", "<cmd>Lspsaga show_line_diagnostics<Return>" }
       keys[#keys + 1] = { "ga", "<cmd>Lspsaga code_action<Return>" }
       keys[#keys + 1] = { "gn", "<cmd>Lspsaga diagnostic_jump_next<Return>" }
