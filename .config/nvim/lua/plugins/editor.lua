@@ -48,6 +48,9 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
+    config = function()
+      vim.keymap.set("n", "<leader><space>", "<Nop>")
+    end,
     keys = {
       {
         ";f",
