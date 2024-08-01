@@ -11,6 +11,12 @@ return {
           runner = "pytest",
         },
       },
+      quickfix = {
+        enabled = false,
+      },
+      output = {
+        enabled = false,
+      },
     },
     keys = {
       {
