@@ -1,3 +1,4 @@
+local HOME = os.getenv("HOME")
 return {
   {
     "williamboman/mason.nvim",
@@ -15,7 +16,7 @@ return {
         -- "tailwindcss-language-server",
         "pyright",
         -- "black@23.9.1",
-        -- "vue-language-server@2.0.20",
+        -- "vue-language-server@2.0.19",
         -- "vtsls@0.2.3",
         "flake8",
       },
@@ -55,5 +56,17 @@ return {
         },
       }
     end,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    optional = true,
+    opts = {
+      linters = {
+        ["markdownlint-cli2"] = {
+          -- TODO not work
+          args = { "--config", HOME .. "/.config/nvim/markdownlint-cli2.yaml", "--" },
+        },
+      },
+    },
   },
 }
