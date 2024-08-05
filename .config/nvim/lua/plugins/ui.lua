@@ -50,7 +50,7 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     keys = {
       {
-        "<C-b>",
+        "<C-x>",
         function()
           require("close_buffers").delete({ type = "hidden" })
         end,
