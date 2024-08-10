@@ -59,6 +59,9 @@ return {
     },
   },
   {
+    "folke/zen-mode.nvim",
+  },
+  {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
     opts = function(_, opts)
