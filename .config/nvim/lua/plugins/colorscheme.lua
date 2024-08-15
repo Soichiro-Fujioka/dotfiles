@@ -22,9 +22,21 @@ return {
     end,
   },
   {
+    "EdenEast/nightfox.nvim",
+    priority = 1000,
+    lazy = false,
+    config = function()
+      require("nightfox").setup({
+        options = {
+          transparent = true,
+        },
+      })
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "nightfox",
     },
   },
 }
