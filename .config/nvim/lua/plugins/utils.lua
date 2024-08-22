@@ -18,4 +18,5 @@ return {
       vim.g.floaterm_width = 0.8
     end,
   },
+  { "itchyny/calendar.vim" },
 }
