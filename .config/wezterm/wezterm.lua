@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 config = {
 	font = wezterm.font("UDEV Gothic 35NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	font_size = 13,
+	font_size = 14,
 	enable_tab_bar = true,
 	window_background_opacity = 0.8,
 	macos_window_background_blur = 10,
