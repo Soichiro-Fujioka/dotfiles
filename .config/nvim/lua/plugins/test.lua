@@ -7,7 +7,7 @@ return {
     opts = {
       adapters = {
         ["neotest-python"] = {
-          args = { "-vvs" },
+          args = { "-vv", "-s" },
           runner = "pytest",
         },
       },
