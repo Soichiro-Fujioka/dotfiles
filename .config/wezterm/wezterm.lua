@@ -77,6 +77,20 @@ config = {
 			mods = "LEADER",
 			action = wezterm.action.ActivateTabRelative(1),
 		},
+		{
+			key = "m",
+			mods = "LEADER",
+			action = wezterm.action_callback(function(win, pane)
+				local tab, window = pane:move_to_new_window()
+			end),
+		},
+		{
+			key = "t",
+			mods = "LEADER",
+			action = wezterm.action_callback(function(win, pane)
+				local tab, window = pane:move_to_new_tab()
+			end),
+		},
 		-- move tab
 		-- TODO use for
 		{
