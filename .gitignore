@@ -43,3 +43,6 @@ github-copilot
 
 # rest-client(vs-code)
 rest-client
+
+# lazy-lock
+.config/nvim/lazy-lock.json
