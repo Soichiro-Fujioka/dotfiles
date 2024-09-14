@@ -19,4 +19,25 @@ return {
     end,
   },
   { "itchyny/calendar.vim" },
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    lazy = true,
+    ft = "markdown",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "personal",
+          path = os.getenv("OBSIDIAN_VAULT_PATH_PERSONAL"),
+        },
+        {
+          name = "work",
+          path = os.getenv("OBSIDIAN_VAULT_PATH_WORK"),
+        },
+      },
+    },
+  },
 }

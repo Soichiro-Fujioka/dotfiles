@@ -29,7 +29,7 @@ vim.opt.formatoptions:append({ "r" })
 vim.opt.signcolumn = "yes"
 vim.opt.clipboard:append({ "unnamedplus" })
 vim.opt.spelllang = { "en", "cjk" }
-vim.opt.conceallevel = 0
+-- vim.opt.conceallevel = 0
 vim.g.python3_host_prog = vim.env.PYENV_ROOT
 
 -- Enable the option to require a Prettier config file
