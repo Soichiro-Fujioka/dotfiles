@@ -31,13 +31,11 @@ return {
       workspaces = {
         {
           name = "personal",
-          path = os.getenv("OBSIDIAN_VAULT_PATH_PERSONAL"),
-        },
-        {
-          name = "work",
-          path = os.getenv("OBSIDIAN_VAULT_PATH_WORK"),
+          path = os.getenv("OBSIDIAN_VAULT_PATH"),
+          strict = true,
         },
       },
+      ui = { enable = false }, -- use render-markdown.nvim
     },
     keys = {
       {
