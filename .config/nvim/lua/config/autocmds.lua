@@ -7,3 +7,9 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
+
+vim.api.nvim_create_user_command("ObsidianCommit", function()
+  local message = "vault backup: " .. os.date("%Y-%m-%d %H:%M:%S")
+  local git_command = 'git add . && git commit -m "' .. message .. '"'
+  os.execute(git_command)
+end, { nargs = 0 })

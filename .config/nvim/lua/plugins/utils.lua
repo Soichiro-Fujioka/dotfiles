@@ -39,5 +39,11 @@ return {
         },
       },
     },
+    keys = {
+      {
+        ";oc",
+        "<cmd>ObsidianCommit<Return>",
+      },
+    },
   },
 }
