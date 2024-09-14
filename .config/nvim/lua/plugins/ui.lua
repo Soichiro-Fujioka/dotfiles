@@ -5,6 +5,7 @@ return {
   },
   {
     "folke/noice.nvim",
+    version = "4.4.7", -- blink issue for work around
     -- borrowed from https://github.com/craftzdog/dotfiles-public/blob/master/.config/nvim/lua/plugins/ui.lua
     opts = function(_, opts)
       table.insert(opts.routes, {
