@@ -9,6 +9,47 @@ function M.dial(increment, g)
   return require("dial.map")[func](group)
 end
 
+-- ref https://github.com/nvim-neo-tree/neo-tree.nvim/discussions/370#discussioncomment-8303412
+local function copy_path(state)
+  -- NeoTree is based on [NuiTree](https://github.com/MunifTanjim/nui.nvim/tree/main/lua/nui/tree)
+  -- The node is based on [NuiNode](https://github.com/MunifTanjim/nui.nvim/tree/main/lua/nui/tree#nuitreenode)
+  local node = state.tree:get_node()
+  local filepath = node:get_id()
+  local filename = node.name
+  local modify = vim.fn.fnamemodify
+
+  local results = {
+    filename,
+    modify(filepath, ":."),
+    filepath,
+    modify(filepath, ":~"),
+    modify(filename, ":r"),
+    modify(filename, ":e"),
+  }
+
+  vim.ui.select({
+    "1. Filename: " .. results[1],
+    "2. Path relative to CWD: " .. results[2],
+    "3. Absolute path: " .. results[3],
+    "4. Path relative to HOME: " .. results[4],
+    "5. Filename without extension: " .. results[5],
+    "6. Extension of the filename: " .. results[6],
+  }, { prompt = "Choose to copy to clipboard:" }, function(choice)
+    if choice then
+      local i = tonumber(choice:sub(1, 1))
+      if i then
+        local result = results[i]
+        vim.fn.setreg("+", result)
+        vim.notify("Copied: " .. result)
+      else
+        vim.notify("Invalid selection")
+      end
+    else
+      vim.notify("Selection cancelled")
+    end
+  end)
+end
+
 return {
   {
     "folke/flash.nvim",
@@ -52,7 +93,7 @@ return {
               show_path = "none",
             },
           },
-          ["y"] = "copy_to_clipboard",
+          ["y"] = copy_path,
         },
       },
     },
