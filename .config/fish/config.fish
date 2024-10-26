@@ -14,9 +14,9 @@ alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
-alias vim "nvim"
-alias pip "pip3"
-alias cl "clear"
+alias vim nvim
+alias pip pip3
+alias cl clear
 
 # Git
 alias g='git'
@@ -56,20 +56,23 @@ set -x PATH $HOME/go/bin $PATH
 set -x PATH /opt/homebrew/bin $PATH
 set -x PATH /opt/homebrew/sbin $PATH
 
+# docker
+set -x DOCKER_CONFIG $HOME/.docker
+
 # TODO move to local file
 # NVM
 function __check_rvm --on-variable PWD --description 'Do nvm stuff'
-  status --is-command-substitution; and return
+    status --is-command-substitution; and return
 
-  if test -f .nvmrc; and test -r .nvmrc;
-    nvm use
-  else
-  end
+    if test -f .nvmrc; and test -r .nvmrc
+        nvm use
+    else
+    end
 end
 
 set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 if test -f $LOCAL_CONFIG
-  source $LOCAL_CONFIG
+    source $LOCAL_CONFIG
 end
 
 # >>> conda initialize >>>
