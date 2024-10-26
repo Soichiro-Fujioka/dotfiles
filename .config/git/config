@@ -10,3 +10,5 @@
 
 [interactive]
   diffFilter = delta --color-only
+[http]
+	postBuffer = 524288000
