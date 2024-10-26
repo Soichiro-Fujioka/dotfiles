@@ -25,3 +25,10 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
 keymap.set("n", ";s", ":w<Return>", opts)
+
+keymap.set("x", 'a"', '2i"')
+keymap.set("x", "a'", "2i'")
+keymap.set("x", "a`", "2`")
+keymap.set("o", 'a"', '2i"')
+keymap.set("o", "a'", "2i'")
+keymap.set("o", "a`", "2`")
