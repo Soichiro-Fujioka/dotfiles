@@ -8,6 +8,9 @@
 # configstore
 .config/configstore
 
+# containers
+.config/containers
+
 # lazygit
 .config/lazygit/state.yml
 
