@@ -15,4 +15,8 @@ return {
       set_previous_events = {},
     },
   },
+  {
+    "vim-skk/skkeleton",
+    dependencies = { "vim-denops/denops.vim" },
+  },
 }
