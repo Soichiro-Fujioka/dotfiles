@@ -7,6 +7,7 @@ return {
         host = "localhost",
       })
     end,
-    cmd = { "SwaggerPreview" },
+    cmd = { "SwaggerPreview", "SwaggerPreviewStop", "SwaggerPreviewToggle" },
+    build = "npm i && npm install swagger-ui-watcher -g",
   },
 }
