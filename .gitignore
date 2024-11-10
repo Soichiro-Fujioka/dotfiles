@@ -52,3 +52,9 @@ rest-client
 
 # argocd
 .config/argocd
+
+# skk
+.config/nvim/skk
+
+# karabiner-element
+.config/karabiner
