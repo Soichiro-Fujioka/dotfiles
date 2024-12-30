@@ -1,27 +1,27 @@
 local HOME = os.getenv("HOME")
 return {
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "luacheck",
-        "shellcheck",
-        -- "tailwindcss-language-server",
-        "typescript-language-server",
-        "css-lsp",
-        "eslint_d",
-        "prettier",
-        "prettierd",
-        -- "tailwindcss-language-server",
-        "pyright",
-        -- "black@23.9.1",
-        -- "vue-language-server@2.0.19",
-        -- "vtsls@0.2.3",
-        "flake8",
-      },
-    },
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = {
+  --     ensure_installed = {
+  --       "stylua",
+  --       "luacheck",
+  --       "shellcheck",
+  --       -- "tailwindcss-language-server",
+  --       "typescript-language-server",
+  --       "css-lsp",
+  --       "eslint_d",
+  --       "prettier",
+  --       "prettierd",
+  --       -- "tailwindcss-language-server",
+  --       "pyright",
+  --       -- "black@23.9.1",
+  --       -- "vue-language-server@2.0.19",
+  --       -- "vtsls@0.2.3",
+  --       "flake8",
+  --     },
+  --   },
+  -- },
   {
     "nvimdev/lspsaga.nvim",
     event = "VeryLazy",

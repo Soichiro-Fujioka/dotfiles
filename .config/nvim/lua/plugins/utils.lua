@@ -18,30 +18,4 @@ return {
       vim.g.floaterm_width = 0.8
     end,
   },
-  { "itchyny/calendar.vim" },
-  {
-    "epwalsh/obsidian.nvim",
-    version = "*",
-    lazy = true,
-    ft = "markdown",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    opts = {
-      workspaces = {
-        {
-          name = "personal",
-          path = os.getenv("OBSIDIAN_VAULT_PATH"),
-          strict = true,
-        },
-      },
-      ui = { enable = false }, -- use render-markdown.nvim
-    },
-    keys = {
-      {
-        ";oc",
-        "<cmd>ObsidianCommit<Return>",
-      },
-    },
-  },
 }

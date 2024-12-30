@@ -1,8 +1,8 @@
 return {
-  {
-    "indent-blankline.nvim",
-    enabled = false,
-  },
+  -- {
+  --   "indent-blankline.nvim",
+  --   enabled = false,
+  -- },
   {
     "folke/noice.nvim",
     version = "4.4.7", -- blink issue for work around
