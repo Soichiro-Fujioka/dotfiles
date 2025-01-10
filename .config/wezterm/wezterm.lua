@@ -16,6 +16,7 @@ config = {
 	-- color_scheme = "Catppuccin Mocha",
 	colors = {
 		background = "black",
+		split = "gray",
 	},
 	tab_bar_at_bottom = true,
 	leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 },

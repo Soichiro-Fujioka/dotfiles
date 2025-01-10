@@ -58,3 +58,6 @@ rest-client
 
 # karabiner-element
 .config/karabiner
+
+# colima
+.config/colima?
