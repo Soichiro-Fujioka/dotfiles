@@ -17,5 +17,18 @@ return {
       ["typescript"] = { "prettier" },
       ["typescriptreact"] = { "prettier" },
     },
+    formatters = {
+      prettier = {
+        command = "prettier",
+        args = { "--stdin-filepath", "$FILENAME" },
+        condition = function()
+          local local_prettier = "./node_modules/.bin/prettier"
+          if vim.fn.filereadable(local_prettier) == 1 then
+            return { command = local_prettier }
+          end
+          return true -- use mason
+        end,
+      },
+    },
   },
 }
