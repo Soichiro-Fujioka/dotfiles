@@ -18,4 +18,24 @@ return {
       set_previous_events = {},
     },
   },
+  {
+    "vim-skk/skkeleton",
+    enabled = true,
+    config = function()
+      vim.api.nvim_set_keymap("i", "<C-j>", "<Plug>(skkeleton-enable)", { noremap = true, silent = false })
+      vim.api.nvim_set_keymap("c", "<C-j>", "<Plug>(skkeleton-enable)", { noremap = true, silent = false })
+      vim.api.nvim_set_keymap("i", "<C-l>", "<Plug>(skkeleton-disable)", { noremap = true, silent = false })
+      vim.api.nvim_set_keymap("c", "<C-l>", "<Plug>(skkeleton-disable)", { noremap = true, silent = false })
+      vim.fn["skkeleton#config"]({
+        globalDictionaries = {
+          "~/.config/nvim/skk/skk-jisyo",
+        },
+        eggLikeNewline = true,
+        keepState = true,
+        showCandidatesCount = 3,
+        -- registerConvertResult = true,
+      })
+    end,
+    dependencies = { "vim-denops/denops.vim" },
+  },
 }
