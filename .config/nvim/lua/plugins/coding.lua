@@ -9,6 +9,9 @@ return {
   },
   {
     "keaising/im-select.nvim",
+    cond = function()
+      return vim.fn.executable("im-select") == 1
+    end,
     opts = {
       default_im_select = "com.apple.keylayout.ABC",
       set_default_events = { "VimEnter", "InsertEnter", "InsertLeave" },
