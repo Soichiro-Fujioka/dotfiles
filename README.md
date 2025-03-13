@@ -15,6 +15,10 @@
 - [tree-sitter/tree-sitter](https://github.com/tree-sitter/tree-sitter) - a parser generator tool and an incremental parsing library
 - [peco/peco](https://github.com/peco/peco) - simplistic interactive filtering tool
 
+- [JankyBorders] - a lightweight tool designed to add colored borders to user windows
+- [SketchyBar](https://github.com/FelixKratz/SketchyBar) - a highly flexible, customizable, fast and powerful status bar
+  - See a wounderful [setup script](https://github.com/FelixKratz/dotfiles?tab=readme-ov-file#sketchybar-setup)
+
 ## How to setup
 
 This neovim settings use [LazyVim](https://www.lazyvim.org). So when you start neovim, required plugins will be installed automatically.
