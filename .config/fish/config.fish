@@ -2,6 +2,8 @@ set fish_greeting ""
 
 set -gx TERM xterm-256color
 
+set -gx XDG_CONFIG_HOME ~/.config
+
 # theme
 set -g theme_color_scheme terminal-dark
 set -g fish_prompt_pwd_dir_length 1
