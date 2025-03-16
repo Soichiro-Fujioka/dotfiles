@@ -18,6 +18,8 @@
 - [JankyBorders] - a lightweight tool designed to add colored borders to user windows
 - [SketchyBar](https://github.com/FelixKratz/SketchyBar) - a highly flexible, customizable, fast and powerful status bar
   - See a wounderful [setup script](https://github.com/FelixKratz/dotfiles?tab=readme-ov-file#sketchybar-setup)
+- [yabai](https://github.com/koekeishiya/yabai) - a window management utility that is designed to work as an extension to the built-in window manager of macOS
+- [skhd](https://github.com/koekeishiya/skhd) - a simple hotkey daemon for macOS that focuses on responsiveness and performance
 
 ## How to setup
 
