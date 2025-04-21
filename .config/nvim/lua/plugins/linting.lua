@@ -4,7 +4,7 @@ return {
     event = "LazyFile",
     opts = {
       linters_by_ft = {
-        python = { "flake8" },
+        python = { "ruff" },
       },
     },
   },

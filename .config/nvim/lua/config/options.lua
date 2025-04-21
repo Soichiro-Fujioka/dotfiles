@@ -34,27 +34,4 @@ vim.g.python3_host_prog = vim.env.PYENV_ROOT
 
 -- Enable the option to require a Prettier config file
 -- If no prettier config file is found, the formatter will not be used
-vim.g.lazyvim_prettier_needs_config = false
-
--- added extras
--- ● coding.nvim-cmp  cmp-buffer  cmp-nvim-lsp  cmp-path  friendly-snippets  nvim-cmp  nvim-snippets
--- ● editor.dial    dial.nvim
---   Increment and decrement numbers, dates, and more
--- ● editor.telescope  dressing.nvim  nvim-lspconfig  telescope-fzf-native.nvim  telescope.nvim
--- ● formatting.black  mason.nvim  conform.nvim  none-ls.nvim
--- ● formatting.prettier  mason.nvim  conform.nvim  none-ls.nvim
--- ● test.core    neotest  nvim-nio  nvim-dap
---   Neotest support. Requires language specific adapters to be configured. (see lang extras)
--- ● ui.dashboard-nvim  dashboard-nvim  snacks.nvim
--- ● ui.indent-blankline  indent-blankline.nvim  snacks.nvim
--- ● ui.treesitter-context  nvim-treesitter-context
--- ● util.rest  kulala.nvim  nvim-treesitter
---
--- Enabled Languages: (7)
--- ● lang.docker  mason.nvim  nvim-lspconfig  nvim-treesitter  none-ls.nvim  nvim-lint
--- ● lang.json    SchemaStore.nvim  nvim-lspconfig  nvim-treesitter
--- ● lang.markdown    markdown-preview.nvim  mason.nvim  nvim-lspconfig  render-markdown.nvim  conform.nvim  none-ls.nvim  nvim-lint
--- ● lang.python  neotest-python  nvim-dap-python  nvim-lspconfig  nvim-treesitter  venv-selector.nvim  mason-nvim-dap.nvim  neotest  nvim-cmp  nvim-dap
--- ● lang.tailwind  nvim-lspconfig  tailwindcss-colorizer-cmp.nvim  nvim-cmp
--- ● lang.toml    nvim-lspconfig
--- ● lang.typescript  mason.nvim  mini.icons  nvim-lspconfig  nvim-dap
+vim.g.lazyvim_prettier_needs_config = true
