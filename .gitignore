@@ -59,3 +59,8 @@ rest-client
 # karabiner-element
 .config/karabiner
 
+# colima
+.config/colima
+
+# nuxtrc
+.config/.nuxtrc
