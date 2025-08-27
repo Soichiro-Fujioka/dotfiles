@@ -3,9 +3,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 config = {
 	font = wezterm.font("UDEV Gothic 35NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	font_size = 14,
+	font_size = 13,
 	enable_tab_bar = true,
-	window_background_opacity = 0.70,
+	window_background_opacity = 0.8,
 	macos_window_background_blur = 15,
 	disable_default_key_bindings = true,
 	use_fancy_tab_bar = false,
@@ -14,7 +14,8 @@ config = {
 	-- color_scheme = "Tokyo Night Moon",
 	-- color_scheme = "Solarized Dark - Patched",
 	-- color_scheme = "Catppuccin Mocha",
-	color_scheme = "Kanagawa (Gogh)",
+	-- color_scheme = "Kanagawa (Gogh)",
+	color_scheme = "Gruvbox Material (Gogh)",
 	-- colors = {
 	-- 	background = "black",
 	-- },
