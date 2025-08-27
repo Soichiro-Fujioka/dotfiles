@@ -12,7 +12,7 @@ return {
   },
   opts = {
     formatters_by_ft = {
-      ["python"] = { "ruff" },
+      -- ["python"] = { "ruff" },
       ["markdown"] = { "prettier" },
       ["typescript"] = { "prettier" },
       ["typescriptreact"] = { "prettier" },
