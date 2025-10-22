@@ -1,7 +1,17 @@
 local wezterm = require("wezterm")
 
+local is_windows = wezterm.target_triple == "x86_64-pc-windows-msvc"
+
+local default_prog
+if is_windows then
+  default_prog = { "wsl.exe", "-d", "ArchLinux", "--cd", "~" }
+else
+  default_prog = { os.getenv("SHELL") }
+end
+
 local config = wezterm.config_builder()
 config = {
+	default_prog = default_prog,
 	font = wezterm.font("UDEV Gothic 35NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
 	font_size = 13,
 	enable_tab_bar = true,
@@ -169,6 +179,19 @@ config = {
 		{ key = "s", mods = "LEADER", action = wezterm.action.QuickSelect },
 	},
 }
+
+if is_windows then
+  keys = {
+    { key = "v", mods = "CTRL",  action = wezterm.action.PasteFrom("Clipboard") },
+    { key = "c", mods = "CTRL",  action = wezterm.action.CopyTo("Clipboard") },
+  	{ key = "c", mods = "ALT", action = wezterm.action.SendKey { key = "c", mods = "CTRL" } },
+  	{ key = "d", mods = "ALT", action = wezterm.action.SendKey { key = "d", mods = "CTRL" } },
+  }
+  for _, keymap in ipairs(keys) do
+    table.insert(config.keys, keymap)
+  end
+  config.leader = { key = "q", mods = "ALT", timeout_milliseconds = 2000 }
+end
 
 wezterm.on("update-right-status", function(window, pane)
 	local date = wezterm.strftime("%Y-%m-%d %H:%M:%S")

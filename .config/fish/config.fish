@@ -86,3 +86,4 @@ end
 
 
 set -x HOMEBREW_PREFIX /usr/local
+set -x TZ Asia/Tokyo
