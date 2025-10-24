@@ -64,3 +64,12 @@ rest-client
 
 # nuxtrc
 .config/.nuxtrc
+
+# git
+.config/git/config
+
+# go
+.config/go
+
+# tool-versions
+.config/.tool-versions
