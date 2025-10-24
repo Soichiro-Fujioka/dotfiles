@@ -147,7 +147,7 @@ return {
     end,
   },
   {
-    "echasnovski/mini.animate",
+    "nvim-mini/mini.animate",
     enabled = false,
     opts = function(_, opts)
       opts.scroll = {
