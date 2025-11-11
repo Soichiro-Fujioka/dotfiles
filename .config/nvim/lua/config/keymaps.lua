@@ -32,3 +32,23 @@ keymap.set("x", "a`", "2`")
 keymap.set("o", 'a"', '2i"')
 keymap.set("o", "a'", "2i'")
 keymap.set("o", "a`", "2`")
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local buf = args.buf
+    local map = function(lhs, rhs, desc)
+      vim.keymap.set("n", lhs, rhs, { buffer = buf, silent = true, desc = desc })
+    end
+
+    map("K", "<cmd>Lspsaga hover_doc<CR>", "Hover (Saga)")
+    map("gf", "<cmd>Lspsaga finder def+ref<CR>", "Finder def+ref (Saga)")
+    map("ge", "<cmd>Lspsaga show_line_diagnostics<CR>", "Line Diagnostics (Saga)")
+    map("ga", "<cmd>Lspsaga code_action<CR>", "Code Action (Saga)")
+    map("gn", "<cmd>Lspsaga diagnostic_jump_next<CR>", "Next Diagnostic (Saga)")
+    map("gN", "<cmd>Lspsaga diagnostic_jump_prev<CR>", "Prev Diagnostic (Saga)")
+    map("gp", "<cmd>Lspsaga peek_definition<CR>", "Peek Definition (Saga)")
+    map("gr", "<cmd>Lspsaga rename<CR>", "Rename (Saga)")
+    map("gR", "<cmd>Lspsaga rename ++project<CR>", "Project Rename (Saga)")
+    map("go", "<cmd>Lspsaga outline<CR>", "Outline (Saga)")
+  end,
+})
