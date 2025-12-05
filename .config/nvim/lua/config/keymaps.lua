@@ -33,6 +33,8 @@ keymap.set("o", 'a"', '2i"')
 keymap.set("o", "a'", "2i'")
 keymap.set("o", "a`", "2`")
 
+keymap.set("n", "q", "<Nop>", { noremap = true })
+
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     local buf = args.buf
