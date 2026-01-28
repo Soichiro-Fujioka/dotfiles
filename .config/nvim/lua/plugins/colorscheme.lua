@@ -1,3 +1,25 @@
+local function set_ui_overrides()
+  vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#fabd2f", bold = true })
+end
+
+set_ui_overrides()
+
+vim.api.nvim_create_autocmd("WinEnter", {
+  callback = function()
+    vim.wo.cursorline = true
+  end,
+})
+
+vim.api.nvim_create_autocmd("WinLeave", {
+  callback = function()
+    vim.wo.cursorline = false
+  end,
+})
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = set_ui_overrides,
+})
+
 return {
   {
     "craftzdog/solarized-osaka.nvim",

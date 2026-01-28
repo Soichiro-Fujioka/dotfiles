@@ -155,26 +155,26 @@ return {
       }
     end,
   },
-  {
-    "shellRaining/hlchunk.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    opts = {
-      chunk = {
-        enable = true,
-      },
-      indent = {
-        enable = true,
-        use_treesitter = true,
-      },
-      line_num = {
-        enable = true,
-        use_treesitter = true,
-      },
-      blank = {
-        enable = false,
-      },
-    },
-  },
+  -- {
+  --   "shellRaining/hlchunk.nvim",
+  --   event = { "BufReadPre", "BufNewFile" },
+  --   opts = {
+  --     chunk = {
+  --       enable = true,
+  --     },
+  --     indent = {
+  --       enable = true,
+  --       use_treesitter = true,
+  --     },
+  --     line_num = {
+  --       enable = true,
+  --       use_treesitter = true,
+  --     },
+  --     blank = {
+  --       enable = false,
+  --     },
+  --   },
+  -- },
   {
     "simeji/winresizer",
   },
@@ -183,16 +183,39 @@ return {
     opts = {
       options = {
         section_separators = { left = "", right = "" },
+        theme = {
+          normal = {
+            a = { fg = "#fabd2f", bg = "#5a5b3f", gui = "bold" },
+            b = { fg = "#d5c4a1", bg = "#5a5b3f" },
+            c = { fg = "#d5c4a1", bg = "#5a5b3f" },
+          },
+          insert = {
+            a = { fg = "#b8bb26", bg = "#454634", gui = "bold" },
+          },
+          inactive = {
+            a = { fg = "d5c4a1", bg = "NONE" },
+            b = { fg = "#928374", bg = "NONE" },
+            c = { fg = "#928374", bg = "NONE" },
+          },
+        },
+        sections = {
+          lualine_a = {
+            { "mode", separator = { left = "" }, right_padding = 2 },
+          },
+          lualine_z = {
+            function()
+              return " " .. os.date("%T")
+            end,
+          },
+        },
       },
-      sections = {
-        lualine_a = {
-          { "mode", separator = { left = "" }, right_padding = 2 },
-        },
-        lualine_z = {
-          function()
-            return " " .. os.date("%T")
-          end,
-        },
+      inactive_sections = {
+        lualine_a = { "filename" },
+        lualine_b = {},
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {},
       },
     },
   },
