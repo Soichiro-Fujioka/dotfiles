@@ -39,7 +39,7 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha",
-        transparent_background = true,
+        transparent_background = false,
       })
     end,
   },
@@ -50,7 +50,7 @@ return {
     config = function()
       require("nightfox").setup({
         options = {
-          transparent = true,
+          transparent = false,
         },
       })
     end,
@@ -78,7 +78,7 @@ return {
     config = function()
       require("gruvbox").setup({
         terminal_colors = true, -- add neovim terminal colors
-        transparent_mode = true,
+        transparent_mode = false,
       })
     end,
   },
