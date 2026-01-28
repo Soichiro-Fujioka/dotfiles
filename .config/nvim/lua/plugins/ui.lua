@@ -59,9 +59,6 @@ return {
     },
   },
   {
-    "folke/zen-mode.nvim",
-  },
-  {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
     opts = function(_, opts)
@@ -217,6 +214,12 @@ return {
         lualine_y = {},
         lualine_z = {},
       },
+    },
+  },
+  {
+    "sunjon/shade.nvim",
+    opts = {
+      overlay_opacity = 60,
     },
   },
 }

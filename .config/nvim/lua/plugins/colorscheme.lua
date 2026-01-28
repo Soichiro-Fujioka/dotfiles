@@ -39,7 +39,7 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha",
-        transparent_background = true,
+        transparent_background = false,
       })
     end,
   },
@@ -50,7 +50,7 @@ return {
     config = function()
       require("nightfox").setup({
         options = {
-          transparent = true,
+          transparent = false,
         },
       })
     end,
