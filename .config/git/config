@@ -12,3 +12,5 @@
   diffFilter = delta --color-only
 [http]
 	postBuffer = 524288000
+[include]
+    path = ~/.config/git/config.local
