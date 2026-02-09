@@ -217,9 +217,23 @@ return {
     },
   },
   {
-    "sunjon/shade.nvim",
+    "folke/zen-mode.nvim",
     opts = {
-      overlay_opacity = 60,
+      window = {
+        width = 160,
+      },
+      wezterm = {
+        enabled = true,
+        -- can be either an absolute font size or the number of incremental steps
+        -- font = "+4", -- (10% increase per step)
+      },
     },
   },
+
+  -- {
+  --   "sunjon/shade.nvim",
+  --   opts = {
+  --     overlay_opacity = 60,
+  --   },
+  -- },
 }
