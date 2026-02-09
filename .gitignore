@@ -66,10 +66,13 @@ rest-client
 .config/.nuxtrc
 
 # git
-.config/git/config
+.config/git/config/config.local
 
 # go
 .config/go
 
 # tool-versions
 .config/.tool-versions
+
+# mise
+.config/mise/config.toml
