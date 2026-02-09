@@ -48,8 +48,8 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
-set -x PATH /opt/homebrew/bin/nodebrew/current/bin $PATH
-set -x NODEBREW_ROOT /opt/homebrew/bin/nodebrew
+# set -x PATH /opt/homebrew/bin/nodebrew/current/bin $PATH
+# set -x NODEBREW_ROOT /opt/homebrew/bin/nodebrew
 
 # Go
 set -x PATH $HOME/go/bin $PATH
@@ -88,15 +88,15 @@ set -x HOMEBREW_PREFIX /usr/local
 set -x TZ Asia/Tokyo
 
 # ASDF configuration code
-if test -z $ASDF_DATA_DIR
-    set _asdf_shims "$HOME/.asdf/shims"
-else
-    set _asdf_shims "$ASDF_DATA_DIR/shims"
-end
-
-# Do not use fish_add_path (added in Fish 3.2) because it
-# potentially changes the order of items in PATH
-if not contains $_asdf_shims $PATH
-    set -gx --prepend PATH $_asdf_shims
-end
-set --erase _asdf_shims
+# if test -z $ASDF_DATA_DIR
+#     set _asdf_shims "$HOME/.asdf/shims"
+# else
+#     set _asdf_shims "$ASDF_DATA_DIR/shims"
+# end
+#
+# # Do not use fish_add_path (added in Fish 3.2) because it
+# # potentially changes the order of items in PATH
+# if not contains $_asdf_shims $PATH
+#     set -gx --prepend PATH $_asdf_shims
+# end
+# set --erase _asdf_shims
