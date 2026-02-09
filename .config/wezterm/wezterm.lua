@@ -13,9 +13,9 @@ local config = wezterm.config_builder()
 config = {
 	default_prog = default_prog,
 	font = wezterm.font("UDEV Gothic 35NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	font_size = 10,
+	font_size = 12.5,
 	enable_tab_bar = true,
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.6,
 	macos_window_background_blur = 15,
 	disable_default_key_bindings = true,
 	use_fancy_tab_bar = false,
