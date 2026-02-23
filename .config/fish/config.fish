@@ -100,3 +100,14 @@ set -x TZ Asia/Tokyo
 #     set -gx --prepend PATH $_asdf_shims
 # end
 # set --erase _asdf_shims
+
+# Auto start/attach tmux on interactive shell
+if status is-interactive
+    if command -q tmux
+        if not set -q TMUX
+            exec tmux new-session -A -s main
+        end
+    end
+end
+
+starship init fish | source
