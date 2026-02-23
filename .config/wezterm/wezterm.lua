@@ -21,11 +21,11 @@ config = {
 	use_fancy_tab_bar = false,
 	tab_and_split_indices_are_zero_based = true,
 	window_decorations = "RESIZE",
-	-- color_scheme = "Tokyo Night Moon",
+	color_scheme = "Tokyo Night Moon",
 	-- color_scheme = "Solarized Dark - Patched",
 	-- color_scheme = "Catppuccin Mocha",
 	-- color_scheme = "Kanagawa (Gogh)",
-	color_scheme = "Gruvbox Material (Gogh)",
+	-- color_scheme = "Gruvbox Material (Gogh)",
 	-- colors = {
 	-- 	background = "black",
 	-- },
