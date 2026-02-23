@@ -54,6 +54,15 @@ return {
           -- Use codex CLI flag (--enable web_search); avoid deprecated web_search_request mapping.
           require("sidekick.cli").toggle({ name = "codex", focus = true })
         end,
+        desc = "Sidekick aider",
+        mode = { "n" },
+      },
+      {
+        ";a",
+        function()
+          -- Use codex CLI flag (--enable web_search); avoid deprecated web_search_request mapping.
+          require("sidekick.cli").toggle({ name = "aider", focus = true })
+        end,
         desc = "Sidekick Codex",
         mode = { "n" },
       },

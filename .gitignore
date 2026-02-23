@@ -76,3 +76,7 @@ rest-client
 
 # mise
 .config/mise/config.toml
+
+# copilot
+.config/.copilot
+
