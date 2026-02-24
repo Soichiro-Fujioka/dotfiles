@@ -1,0 +1,14 @@
+# ---- Window ----
+background-opacity = 0.7
+window-decoration = auto
+
+# ---- Font ----
+font-family = "UDEV Gothic 35NF"
+font-size = 12.5
+
+# ---- Selection -> clipboard ----
+copy-on-select = clipboard
+
+# ---- Theme ----
+theme = "TokyoNight Moon"
+
