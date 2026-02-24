@@ -80,6 +80,8 @@ rest-client
 # copilot
 .config/.copilot
 
-
 # tmux
 .config/tmux/plugins
+
+# opencode
+.config/opencode/opencode.jsonc
