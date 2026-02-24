@@ -1,10 +1,9 @@
 [general]
 live_config_reload = true
 
-# TODO: windows以外での切り替え
-# [terminal.shell]
-# program = "wsl.exe"
-# args = ["-d", "ArchLinux", "--cd", "~"]
+[terminal.shell]
+program = "wsl.exe"
+args = ["-d", "ArchLinux", "--cd", "~"]
 
 [window]
 opacity = 0.8
