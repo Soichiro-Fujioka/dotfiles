@@ -83,5 +83,12 @@ rest-client
 # tmux
 .config/tmux/plugins
 
+# service
+.config/fish/functions/myservice.fish
+
 # opencode
-.config/opencode/opencode.jsonc
+.config/opencode
+
+# claude
+.config/claude/
+!.config/claude/settings.json
