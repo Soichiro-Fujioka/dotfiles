@@ -89,6 +89,3 @@ rest-client
 # opencode
 .config/opencode
 
-# claude
-.config/claude/
-!.config/claude/settings.json
