@@ -238,4 +238,21 @@ return {
       "folke/snacks.nvim",
     },
   },
+  {
+    "3rd/image.nvim",
+    ft = { "markdown" },
+    opts = {
+      backend = "kitty",
+      processor = "magick_cli",
+      integrations = {
+        markdown = {
+          enabled = true,
+          clear_in_insert_mode = true,
+          only_render_image_at_cursor = false,
+          floating_windows = false,
+        },
+      },
+      max_height_window_percentage = 50,
+    },
+  },
 }
