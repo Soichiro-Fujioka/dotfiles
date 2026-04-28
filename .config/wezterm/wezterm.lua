@@ -13,9 +13,9 @@ local config = wezterm.config_builder()
 config = {
 	default_prog = default_prog,
 	font = wezterm.font("UDEV Gothic 35NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
-	font_size = 10,
+	font_size = 10.5,
 	enable_tab_bar = false,
-	window_background_opacity = 0.7,
+	window_background_opacity = 0.8,
 	macos_window_background_blur = 15,
 	disable_default_key_bindings = true,
 	use_fancy_tab_bar = false,
@@ -30,6 +30,18 @@ config = {
 		background = "black",
 	},
 	tab_bar_at_bottom = true,
+	keys = {
+		{ key = "v", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
+		{ key = "V", mods = "CTRL|SHIFT", action = wezterm.action.PasteFrom("Clipboard") },
+		{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action.CopyTo("Clipboard") },
+	},
+	mouse_bindings = {
+		{
+			event = { Up = { streak = 1, button = "Right" } },
+			mods = "NONE",
+			action = wezterm.action.PasteFrom("Clipboard"),
+		},
+	},
 	-- use tmux
 	-- leader = { key = "q", mods = "ALT", timeout_milliseconds = 2000 },
 	-- keys = {
