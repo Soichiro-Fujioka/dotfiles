@@ -89,3 +89,9 @@ rest-client
 # opencode
 .config/opencode
 
+# glab-cli
+.config/glab-cli
+
+# claude
+.claude
+
