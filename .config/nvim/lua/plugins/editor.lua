@@ -25,6 +25,7 @@ local function copy_path(state)
     modify(filepath, ":~"),
     modify(filename, ":r"),
     modify(filename, ":e"),
+    "file://" .. filepath,
   }
 
   vim.ui.select({
@@ -34,6 +35,7 @@ local function copy_path(state)
     "4. Path relative to HOME: " .. results[4],
     "5. Filename without extension: " .. results[5],
     "6. Extension of the filename: " .. results[6],
+    "7. File URI: " .. results[7],
   }, { prompt = "Choose to copy to clipboard:" }, function(choice)
     if choice then
       local i = tonumber(choice:sub(1, 1))
