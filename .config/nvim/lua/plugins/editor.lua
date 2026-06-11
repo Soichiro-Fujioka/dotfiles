@@ -160,4 +160,27 @@ return {
       },
     },
   },
+  {
+    "sindrets/diffview.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles", "DiffviewFileHistory" },
+    keys = {
+      { ";d", "<cmd>DiffviewOpen<cr>", desc = "Diffview Open" },
+      { ";h", "<cmd>DiffviewFileHistory %<cr>", desc = "Diffview File History" },
+      { ";H", "<cmd>DiffviewFileHistory<cr>", desc = "Diffview Branch History" },
+      { ";q", "<cmd>DiffviewClose<cr>", desc = "Diffview Close" },
+    },
+    opts = {
+      enhanced_diff_hl = true,
+      view = {
+        default = {
+          layout = "diff2_horizontal",
+        },
+        merge_tool = {
+          layout = "diff3_horizontal",
+          disable_diagnostics = true,
+        },
+      },
+    },
+  },
 }
