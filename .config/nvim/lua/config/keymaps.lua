@@ -1,6 +1,41 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+-- PJルートからの相対パスを返す
+local function get_project_relative_path()
+  local filepath = vim.fn.expand("%:p")
+  local git_root = vim.fn.systemlist("git rev-parse --show-toplevel 2>/dev/null")[1]
+  if git_root and git_root ~= "" then
+    return filepath:sub(#git_root + 2)
+  end
+  return vim.fn.expand("%")
+end
+
+-- ファイルパス + コードブロックで囲ったテキストを組み立てる
+local function build_copy_content(path, text)
+  local ext = vim.fn.expand("%:e")
+  return path .. "\n```" .. ext .. "\n" .. text .. "\n```"
+end
+
+-- Y (normal): ファイルパス + カーソル下の単語をコピー
+keymap.set("n", "Y", function()
+  local path = get_project_relative_path()
+  local word = vim.fn.expand("<cword>")
+  vim.fn.setreg("+", build_copy_content(path, word))
+  vim.notify("Copied: " .. path, vim.log.levels.INFO)
+end, { noremap = true, silent = true, desc = "Copy filepath + word in code block" })
+
+-- Y (visual): ファイルパス + 選択テキストをコピー
+keymap.set("v", "Y", function()
+  local path = get_project_relative_path()
+  local saved, saved_type = vim.fn.getreg("z"), vim.fn.getregtype("z")
+  vim.cmd('noautocmd normal! "zy')
+  local selection = vim.fn.getreg("z")
+  vim.fn.setreg("z", saved, saved_type)
+  vim.fn.setreg("+", build_copy_content(path, selection))
+  vim.notify("Copied: " .. path, vim.log.levels.INFO)
+end, { noremap = true, silent = true, desc = "Copy filepath + selection in code block" })
+
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
 keymap.set("n", "d", '"_d')
