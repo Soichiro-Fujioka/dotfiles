@@ -14,7 +14,7 @@ end
 -- ファイルパス + コードブロックで囲ったテキストを組み立てる
 local function build_copy_content(path, text)
   local ext = vim.fn.expand("%:e")
-  return path .. "\n```" .. ext .. "\n" .. text .. "\n```"
+  return path .. "\n```" .. ext .. "\n" .. text .. "\n```\n"
 end
 
 -- Y (normal): ファイルパス + カーソル下の単語をコピー
