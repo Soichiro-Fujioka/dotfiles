@@ -30,6 +30,7 @@ vim.opt.signcolumn = "yes"
 -- vim.opt.clipboard:append({ "unnamedplus" })
 vim.opt.spelllang = { "en", "cjk" }
 vim.opt.clipboard = "unnamedplus"
+
 -- vim.opt.conceallevel = 0
 -- vim.g.python3_host_prog = vim.env.PYENV_ROOT
 
