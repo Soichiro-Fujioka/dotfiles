@@ -28,6 +28,13 @@ require("lazy").setup({
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = true }, -- automatically check for plugin updates
+  git = {
+    -- disable partial clone (--filter=blob:none): on this network, on-demand blob
+    -- fetches during checkout to a locked commit intermittently fail, leaving
+    -- plugins (e.g. kulala.nvim, which changed submodules across versions) in a
+    -- half-checked-out state.
+    filter = false,
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins
