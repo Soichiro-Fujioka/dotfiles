@@ -23,7 +23,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 return {
   {
     "craftzdog/solarized-osaka.nvim",
-    enabled = false,
     lazy = false,
     priority = 1000,
     opts = function()
@@ -85,7 +84,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "solarized-osaka",
     },
   },
 }
