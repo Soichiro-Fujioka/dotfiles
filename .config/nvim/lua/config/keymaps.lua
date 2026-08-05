@@ -11,30 +11,36 @@ local function get_project_relative_path()
   return vim.fn.expand("%")
 end
 
--- ファイルパス + コードブロックで囲ったテキストを組み立てる
-local function build_copy_content(path, text)
+-- ファイルパス:行番号 + コードブロックで囲ったテキストを組み立てる
+local function build_copy_content(path_with_line, text)
   local ext = vim.fn.expand("%:e")
-  return path .. "\n```" .. ext .. "\n" .. text .. "\n```\n"
+  return path_with_line .. "\n```" .. ext .. "\n" .. text .. "\n```\n"
 end
 
--- Y (normal): ファイルパス + カーソル下の単語をコピー
+-- Y (normal): ファイルパス:行番号 + カーソル下の単語をコピー
 keymap.set("n", "Y", function()
   local path = get_project_relative_path()
+  local path_with_line = path .. ":" .. vim.fn.line(".")
   local word = vim.fn.expand("<cword>")
-  vim.fn.setreg("+", build_copy_content(path, word))
-  vim.notify("Copied: " .. path, vim.log.levels.INFO)
-end, { noremap = true, silent = true, desc = "Copy filepath + word in code block" })
+  vim.fn.setreg("+", build_copy_content(path_with_line, word))
+  vim.notify("Copied: " .. path_with_line, vim.log.levels.INFO)
+end, { noremap = true, silent = true, desc = "Copy filepath:line + word in code block" })
 
--- Y (visual): ファイルパス + 選択テキストをコピー
+-- Y (visual): ファイルパス:行番号範囲 + 選択テキストをコピー
 keymap.set("v", "Y", function()
   local path = get_project_relative_path()
+  local start_line, end_line = vim.fn.line("v"), vim.fn.line(".")
+  if start_line > end_line then
+    start_line, end_line = end_line, start_line
+  end
+  local path_with_line = path .. ":" .. start_line .. "-" .. end_line
   local saved, saved_type = vim.fn.getreg("z"), vim.fn.getregtype("z")
   vim.cmd('noautocmd normal! "zy')
   local selection = vim.fn.getreg("z")
   vim.fn.setreg("z", saved, saved_type)
-  vim.fn.setreg("+", build_copy_content(path, selection))
-  vim.notify("Copied: " .. path, vim.log.levels.INFO)
-end, { noremap = true, silent = true, desc = "Copy filepath + selection in code block" })
+  vim.fn.setreg("+", build_copy_content(path_with_line, selection))
+  vim.notify("Copied: " .. path_with_line, vim.log.levels.INFO)
+end, { noremap = true, silent = true, desc = "Copy filepath:line-range + selection in code block" })
 
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
