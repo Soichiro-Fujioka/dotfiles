@@ -1,4 +1,6 @@
-background-opacity = 0.70
+background-opacity = 0.9
+background-blur-radius = 20
+background = #031219
 window-decoration = auto
 cursor-style = block
 cursor-style-blink = true
@@ -12,3 +14,6 @@ theme = "TokyoNight Moon"
 macos-option-as-alt = true
 
 desktop-notifications = true
+keybind = ctrl+n=unbind
+keybind = ctrl+t=unbind
+keybind = ctrl+f=unbind
