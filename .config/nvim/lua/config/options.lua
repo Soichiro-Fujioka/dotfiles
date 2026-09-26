@@ -27,9 +27,27 @@ vim.opt.path:append({ "**" })
 vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.formatoptions:append({ "r" })
 vim.opt.signcolumn = "yes"
--- vim.opt.clipboard:append({ "unnamedplus" })
+vim.opt.clipboard:append({ "unnamedplus" })
 vim.opt.spelllang = { "en", "cjk" }
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
+
+local is_termux = vim.env.TERMUX_VERSION ~= nil
+  or vim.env.PREFIX == "/data/data/com.termux/files/usr"
+  or vim.fn.isdirectory("/data/data/com.termux") == 1
+
+if is_termux and vim.fn.executable("curl") == 1 then
+  vim.g.clipboard = {
+    name = "termux-clipboard-bridge",
+    copy = {
+      ["+"] = "curl -fsS --data-binary @- http://127.0.0.1:8765/set",
+      ["*"] = "curl -fsS --data-binary @- http://127.0.0.1:8765/set",
+    },
+    paste = {
+      ["+"] = "curl -fsS http://127.0.0.1:8765/get",
+      ["*"] = "curl -fsS http://127.0.0.1:8765/get",
+    },
+  }
+end
 
 -- vim.opt.conceallevel = 0
 -- vim.g.python3_host_prog = vim.env.PYENV_ROOT
