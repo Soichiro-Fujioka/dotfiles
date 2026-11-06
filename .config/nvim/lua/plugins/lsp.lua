@@ -20,6 +20,10 @@ return {
         diagnostic = {
           on_insert_follow = true,
         },
+        definition = {
+          width = 0.75,
+          height = 0.75,
+        },
       }
     end,
   },
