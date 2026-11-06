@@ -98,3 +98,5 @@ rest-client
 # claude
 .claude
 
+.config/gcloud/
+.config/homebrew/
